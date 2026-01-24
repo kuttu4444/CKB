@@ -16,7 +16,7 @@ export class OpenreportsComponent implements OnInit {
     this.route.queryParams
     .subscribe(params => {
      this.ReportName= params.report;
-     this.Filename= params.filename;
+    this.Filename= 'https://ckbndl.s3.us-east-1.amazonaws.com/' + params.filename;
      this.reportdetails=params.reportdetails;
     }
   );
